@@ -48,38 +48,88 @@
   <div class="destinations-header">
     <div>
       <div class="section-label">✦ Destinacionet</div>
-      <h2 class="section-title">Zgjidhni <em>Ëndrrën</em><br/>Tuaj</h2>
+      <h2 class="section-title">Zgjidhni <em>Ëndrrën</em></h2>
     </div>
-    <p class="section-sub">Nga qytetet europiane deri te ishujt ekzotikë — kemi destinacionin e duhur për çdo dëshirë.</p>
   </div>
+
   <div class="dest-grid">
+
+
     <div class="dest-card">
-      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=1200&q=80" alt="Paris"/>
-      <div class="dest-overlay"><div class="dest-country">Francë</div><div class="dest-city">Paris</div><a href="destinations.html" class="dest-btn">Zbulo →</a></div>
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
+      <div class="dest-overlay">
+        <div class="dest-city">Paris</div>
+        <button class="dest-btn" onclick="bookDestination('Paris')">Book Now</button>
+      </div>
+    </div>
+
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b">
+      <div class="dest-overlay">
+        <div class="dest-city">Roma</div>
+        <button class="dest-btn" onclick="bookDestination('Roma')">Book Now</button>
+      </div>
+    </div>
+
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf">
+      <div class="dest-overlay">
+        <div class="dest-city">Tokyo</div>
+        <button class="dest-btn" onclick="bookDestination('Tokyo')">Book Now</button>
+      </div>
+    </div>
+
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4">
+      <div class="dest-overlay">
+        <div class="dest-city">Bali</div>
+        <button class="dest-btn" onclick="bookDestination('Bali')">Book Now</button>
+      </div>
+    </div>
+
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8">
+      <div class="dest-overlay">
+        <div class="dest-city">Santorini</div>
+        <button class="dest-btn" onclick="bookDestination('Santorini')">Book Now</button>
+      </div>
     </div>
     <div class="dest-card">
-      <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800&q=80" alt="Roma"/>
-      <div class="dest-overlay"><div class="dest-country">Itali</div><div class="dest-city">Roma</div><a href="destinations.html" class="dest-btn">Zbulo →</a></div>
-    </div>
+      <img src="https://images.unsplash.com/photo-1555992336-03a23c6b1e34">
+      <div class="dest-overlay">
+        <div class="dest-city">Petra</div>
+        <button class="dest-btn" onclick="bookDestination('Petra')">Book Now</button>
+      </div>
+    <
     <div class="dest-card">
-      <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=800&q=80" alt="Santorini"/>
-      <div class="dest-overlay"><div class="dest-country">Greqi</div><div class="dest-city">Santorini</div><a href="destinations.html" class="dest-btn">Zbulo →</a></div>
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+      <div class="dest-overlay">
+        <div class="dest-city">Dubai</div>
+        <button class="dest-btn" onclick="bookDestination('Dubai')">Book Now</button>
+      </div>
     </div>
+
     <div class="dest-card">
-      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=80" alt="Dubai"/>
-      <div class="dest-overlay"><div class="dest-country">EBA</div><div class="dest-city">Dubai</div><a href="destinations.html" class="dest-btn">Zbulo →</a></div>
+      <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2">
+      <div class="dest-overlay">
+        <div class="dest-city">New York</div>
+        <button class="dest-btn" onclick="bookDestination('New York')">Book Now</button>
+      </div>
     </div>
+
+
     <div class="dest-card">
-      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80" alt="Tokyo"/>
-      <div class="dest-overlay"><div class="dest-country">Japoni</div><div class="dest-city">Tokyo</div><a href="destinations.html" class="dest-btn">Zbulo →</a></div>
+      <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded">
+      <div class="dest-overlay">
+        <div class="dest-city">Barcelona</div>
+        <button class="dest-btn" onclick="bookDestination('Barcelona')">Book Now</button>
+      </div>
     </div>
-    <div class="dest-card">
-      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80" alt="Bali"/>
-      <div class="dest-overlay"><div class="dest-country">Indonezi</div><div class="dest-city">Bali</div><a href="destinations.html" class="dest-btn">Zbulo →</a></div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:3rem;">
-    <a href="destinations.html" class="btn-outline">Shiko të gjitha Destinacionet</a>
+
   </div>
 </section>
 
@@ -103,34 +153,54 @@
   </div>
 </section>
 
-<section id="offers">
-  <div style="text-align:center;margin-bottom:3.5rem;">
-    <div class="section-label">✦ Ofertat</div>
-    <h2 class="section-title">Paketat <em>Tona</em> Kryesore</h2>
-    <p class="section-sub" style="margin:0 auto;">Paketa të gatshme me gjithçka të përfshirë — thjesht zgjidhni destinacionin.</p>
-  </div>
-  <div class="offers-grid">
-    <div class="offer-card">
-      <div class="offer-img"><img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?w=600&q=80" alt="New York"/></div>
-      <div class="offer-body">
-        <div class="offer-tag">✦ Bestseller</div>
-        <div class="offer-title">New York – Qyteti që Nuk Fle</div>
-        <div class="offer-details"><span>🗓️ 5 Netë</span><span>✈️ Fluturim i Përfshirë</span><span>🏨 Hotel 4★</span></div>
-        <div class="offer-price"><div><div class="price-num">€1,490</div><div class="price-per">/ person</div></div><button class="book-btn" onclick="location.href='booking.html'">Rezervo</button></div>
-      </div>
-    </div>
-    <div class="offer-card">
-      <div class="offer-img"><img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&q=80" alt="Barcelona"/></div>
-      <div class="offer-body">
-        <div class="offer-tag">✦ Kulturë & Plazh</div>
-        <div class="offer-title">Barcelona – Gaudi & Mediterane</div>
-        <div class="offer-details"><span>🗓️ 4 Netë</span><span>✈️ Fluturim i Përfshirë</span><span>🏨 Hotel 4★</span></div>
-        <div class="offer-price"><div><div class="price-num">€890</div><div class="price-per">/ person</div></div><button class="book-btn" onclick="location.href='booking.html'">Rezervo</button></div>
-      </div>
+<div class="offers-grid">
+
+  <div class="offer-card">
+    <div class="offer-img"><img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2"></div>
+    <div class="offer-body">
+      <div class="offer-title">New York</div>
+      <div class="offer-price">€1490</div>
+      <button class="book-btn">Book Now</button>
     </div>
   </div>
-  <div style="text-align:center;margin-top:3rem;"><a href="offers.html" class="btn-outline">Shiko të gjitha Ofertat</a></div>
-</section>
+
+  <div class="offer-card">
+    <div class="offer-img"><img src="https://images.unsplash.com/photo-1583422409516-2895a77efded"></div>
+    <div class="offer-body">
+      <div class="offer-title">Barcelona</div>
+      <div class="offer-price">€890</div>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-img"><img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8"></div>
+    <div class="offer-body">
+      <div class="offer-title">Santorini</div>
+      <div class="offer-price">€950</div>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-img"><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090"></div>
+    <div class="offer-body">
+      <div class="offer-title">Dubai</div>
+      <div class="offer-price">€1100</div>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-img"><img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a"></div>
+    <div class="offer-body">
+      <div class="offer-title">Paris</div>
+      <div class="offer-price">€799</div>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+</div>
 
 <section id="testimonial">
   <p class="testimonial-text">"Udhëtimi në Bali me Balfin Escape ishte thjesht i jashtëzakonshëm. Gjithçka ishte perfekte — nga hoteli deri te guidat. Do të kthehem patjetër."</p>
