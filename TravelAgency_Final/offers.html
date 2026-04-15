@@ -1,215 +1,149 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ofertat – Balfin Escape</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    .offers-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      padding: 2rem 4rem;
-    }
-
-    .offer-card {
-      background: #111;
-      color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: 0.3s;
-    }
-
-    .offer-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .offer-card img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-    }
-
-    .offer-body {
-      padding: 20px;
-    }
-
-    .offer-title {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .offer-details span {
-      display: block;
-      font-size: 0.9rem;
-      margin-bottom: 5px;
-      opacity: 0.9;
-    }
-
-    .offer-price {
-      margin-top: 10px;
-      font-weight: bold;
-      color: gold;
-    }
-
-    .book-btn {
-      margin-top: 12px;
-      padding: 10px;
-      width: 100%;
-      background: gold;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  </style>
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav id="navbar" class="scrolled">
+  <div class="nav-logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
+    Balfin<span>Escape</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="destinations.html">Destinacionet</a></li>
+    <li><a href="offers.html">Ofertat</a></li>
+    <li><a href="about.html">Rreth Nesh</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+
+  <a href="booking.html" class="nav-cta">Rezervo Tani</a>
+</nav>
+
+<!-- TITLE -->
 <section style="padding-top:120px;text-align:center;">
-  <h2>Ofertat Ekskluzive</h2>
+  <div class="section-label">✦ Paketat</div>
+  <h2 class="section-title">Ofertat <em>Ekskluzive</em></h2>
 </section>
 
-<div class="offers-grid">
+<!-- OFFERS GRID -->
+<section id="offers">
+  <div class="offers-grid">
 
-  <!-- PARIS -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
-    <div class="offer-body">
-      <div class="offer-title">Paris – Qyteti i Dashurisë</div>
-      <div class="offer-details">
-        <span>🗓️ 4 Netë</span>
-        <span>✈️ Fluturim i përfshirë</span>
-        <span>🏨 Hotel 4★</span>
+    <!-- PARIS -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
+      <div class="offer-body">
+        <div class="offer-title">Paris – Qyteti i Dashurisë</div>
+        <div class="offer-price">€799 / person</div>
+        <button class="book-btn" onclick="bookDestination('Paris')">Book Now</button>
       </div>
-      <div class="offer-price">€799 / person</div>
-      <button class="book-btn" onclick="bookDestination('Paris')">Book Now</button>
+    </div>
+
+    <!-- ROMA -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b">
+      <div class="offer-body">
+        <div class="offer-title">Roma – Histori e Përjetshme</div>
+        <div class="offer-price">€650 / person</div>
+        <button class="book-btn" onclick="bookDestination('Roma')">Book Now</button>
+      </div>
+    </div>
+
+    <!-- TOKYO -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf">
+      <div class="offer-body">
+        <div class="offer-title">Tokyo – Teknologji & Traditë</div>
+        <div class="offer-price">€1200 / person</div>
+        <button class="book-btn" onclick="bookDestination('Tokyo')">Book Now</button>
+      </div>
+    </div>
+
+    <!-- BALI -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4">
+      <div class="offer-body">
+        <div class="offer-title">Bali – Parajsë Tropikale</div>
+        <div class="offer-price">€1050 / person</div>
+        <button class="book-btn" onclick="bookDestination('Bali')">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Shangai -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8">
+      <div class="offer-body">
+        <div class="offer-title">Shangai – Aventurë futuristike</div>
+        <div class="offer-price">€900 / person</div>
+        <button class="book-btn" onclick="bookDestination('Shangai')">Book Now</button>
+      </div>
+    </div>
+
+    <!-- DUBAI -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+      <div class="offer-body">
+        <div class="offer-title">Dubai – Luks Modern</div>
+        <div class="offer-price">€1100 / person</div>
+        <button class="book-btn" onclick="bookDestination('Dubai')">Book Now</button>
+      </div>
+    </div>
+
+    <!-- NEW YORK -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2">
+      <div class="offer-body">
+        <div class="offer-title">New York – Qyteti që Nuk Fle</div>
+        <div class="offer-price">€1300 / person</div>
+        <button class="book-btn" onclick="bookDestination('New York')">Book Now</button>
+      </div>
+    </div>
+
+    <!-- BARCELONA -->
+    <div class="offer-card">
+      <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded">
+      <div class="offer-body">
+        <div class="offer-title">Barcelona – Art & Plazh</div>
+        <div class="offer-price">€850 / person</div>
+        <button class="book-btn" onclick="bookDestination('Barcelona')">Book Now</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Balfin<span>Escape</span></div>
+      <p class="footer-desc">Agjencia juaj e besuar për udhëtime premium.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Kompania</h4>
+      <ul>
+        <li><a href="about.html">Rreth Nesh</a></li>
+        <li><a href="offers.html">Ofertat</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
     </div>
   </div>
 
-  <!-- ROMA -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b">
-    <div class="offer-body">
-      <div class="offer-title">Roma – Histori e Përjetshme</div>
-      <div class="offer-details">
-        <span>🗓️ 4 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 4★</span>
-      </div>
-      <div class="offer-price">€650 / person</div>
-      <button class="book-btn" onclick="bookDestination('Roma')">Book Now</button>
-    </div>
+  <div class="footer-bottom">
+    <span>© 2026 Balfin Escape</span>
   </div>
+</footer>
 
-  <!-- TOKYO -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf">
-    <div class="offer-body">
-      <div class="offer-title">Tokyo – Traditë & Teknologji</div>
-      <div class="offer-details">
-        <span>🗓️ 6 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 5★</span>
-      </div>
-      <div class="offer-price">€1200 / person</div>
-      <button class="book-btn" onclick="bookDestination('Tokyo')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- BALI -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4">
-    <div class="offer-body">
-      <div class="offer-title">Bali – Parajsë Tropikale</div>
-      <div class="offer-details">
-        <span>🗓️ 5 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Resort 5★</span>
-      </div>
-      <div class="offer-price">€1050 / person</div>
-      <button class="book-btn" onclick="bookDestination('Bali')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- SANTORINI -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8">
-    <div class="offer-body">
-      <div class="offer-title">Santorini – Ishull Romantik</div>
-      <div class="offer-details">
-        <span>🗓️ 4 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 4★</span>
-      </div>
-      <div class="offer-price">€900 / person</div>
-      <button class="book-btn" onclick="bookDestination('Santorini')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- PETRA -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1555992336-03a23c6b1e34">
-    <div class="offer-body">
-      <div class="offer-title">Petra – Mrekulli Historike</div>
-      <div class="offer-details">
-        <span>🗓️ 5 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 4★</span>
-      </div>
-      <div class="offer-price">€980 / person</div>
-      <button class="book-btn" onclick="bookDestination('Petra')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- DUBAI -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
-    <div class="offer-body">
-      <div class="offer-title">Dubai – Luks & Modernitet</div>
-      <div class="offer-details">
-        <span>🗓️ 5 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 5★</span>
-      </div>
-      <div class="offer-price">€1100 / person</div>
-      <button class="book-btn" onclick="bookDestination('Dubai')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- NEW YORK -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2">
-    <div class="offer-body">
-      <div class="offer-title">New York – Qyteti që Nuk Fle</div>
-      <div class="offer-details">
-        <span>🗓️ 5 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 4★</span>
-      </div>
-      <div class="offer-price">€1300 / person</div>
-      <button class="book-btn" onclick="bookDestination('New York')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- BARCELONA -->
-  <div class="offer-card">
-    <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded">
-    <div class="offer-body">
-      <div class="offer-title">Barcelona – Art & Plazh</div>
-      <div class="offer-details">
-        <span>🗓️ 4 Netë</span>
-        <span>✈️ Fluturim</span>
-        <span>🏨 Hotel 4★</span>
-      </div>
-      <div class="offer-price">€850 / person</div>
-      <button class="book-btn" onclick="bookDestination('Barcelona')">Book Now</button>
-    </div>
-  </div>
-
-</div>
-
+<!-- JS -->
 <script>
 function bookDestination(dest) {
   localStorage.setItem("selectedDestination", dest);

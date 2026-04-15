@@ -1,177 +1,113 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Destinacionet – Balfin Escape</title>
+
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    .dest-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      padding: 0 4rem;
-    }
-
-    .dest-card {
-      position: relative;
-      height: 420px;
-      overflow: hidden;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    .dest-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: 0.5s;
-    }
-
-    .dest-card:hover img {
-      transform: scale(1.1);
-    }
-
-    .dest-overlay {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 20px;
-      color: white;
-      background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
-    }
-
-    .dest-city {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .dest-desc {
-      font-size: 0.9rem;
-      margin: 8px 0;
-      opacity: 0.9;
-    }
-
-    .dest-price {
-      font-weight: bold;
-      color: gold;
-    }
-
-    .dest-btn {
-      margin-top: 10px;
-      padding: 8px 15px;
-      background: gold;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<section style="padding-top:120px;text-align:center;">
-  <h2>Destinacionet Tona</h2>
+<nav>
+  <div class="nav-logo">Balfin <span>Escape</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destinacione</a></li>
+    <li><a href="offers.html">Ofertat</a></li>
+  </ul>
+  <a href="booking.html" class="nav-cta">Book Now</a>
+</nav>
+
+<section id="destinations" style="padding-top:120px;">
+
+  <div class="destinations-header">
+    <div>
+      <div class="section-label">Destinacionet</div>
+      <h2 class="section-title">Zgjidh <em>Destinacionin</em></h2>
+    </div>
+    <p class="section-sub">Eksploro vendet më të bukura në botë.</p>
+  </div>
+
+  <div class="dest-grid">
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
+      <div class="dest-overlay">
+        <div class="dest-country">France</div>
+        <div class="dest-city">Paris</div>
+        <a class="dest-btn" href="offers.html?city=Paris">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b">
+      <div class="dest-overlay">
+        <div class="dest-country">Italy</div>
+        <div class="dest-city">Roma</div>
+        <a class="dest-btn" href="offers.html?city=Roma">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf">
+      <div class="dest-overlay">
+        <div class="dest-country">Japan</div>
+        <div class="dest-city">Tokyo</div>
+        <a class="dest-btn" href="offers.html?city=Tokyo">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4">
+      <div class="dest-overlay">
+        <div class="dest-country">Indonesia</div>
+        <div class="dest-city">Bali</div>
+        <a class="dest-btn" href="offers.html?city=Bali">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8">
+      <div class="dest-overlay">
+        <div class="dest-country">China</div>
+        <div class="dest-city">Shangai</div>
+        <a class="dest-btn" href="offers.html?city=Santorini">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+      <div class="dest-overlay">
+        <div class="dest-country">UAE</div>
+        <div class="dest-city">Dubai</div>
+        <a class="dest-btn" href="offers.html?city=Dubai">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2">
+      <div class="dest-overlay">
+        <div class="dest-country">USA</div>
+        <div class="dest-city">New York</div>
+        <a class="dest-btn" href="offers.html?city=New York">Explore</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded">
+      <div class="dest-overlay">
+        <div class="dest-country">Spain</div>
+        <div class="dest-city">Barcelona</div>
+        <a class="dest-btn" href="offers.html?city=Barcelona">Explore</a>
+      </div>
+    </div>
+
+  </div>
+
 </section>
-<div class="dest-grid">
 
-  <!-- PARIS -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
-    <div class="dest-overlay">
-      <div class="dest-city">Paris</div>
-      <div class="dest-desc">Qyteti i dashurisë.</div>
-      <div class="dest-price">Nga €799</div>
-      <button class="dest-btn" onclick="bookDestination('Paris')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- ROMA -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b">
-    <div class="dest-overlay">
-      <div class="dest-city">Roma</div>
-      <div class="dest-desc">Histori e lashtë.</div>
-      <div class="dest-price">Nga €650</div>
-      <button class="dest-btn" onclick="bookDestination('Roma')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- TOKYO -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf">
-    <div class="dest-overlay">
-      <div class="dest-city">Tokyo</div>
-      <div class="dest-desc">Traditë & teknologji.</div>
-      <div class="dest-price">Nga €1200</div>
-      <button class="dest-btn" onclick="bookDestination('Tokyo')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- BALI -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4">
-    <div class="dest-overlay">
-      <div class="dest-city">Bali</div>
-      <div class="dest-desc">Parajsë tropikale.</div>
-      <div class="dest-price">Nga €1050</div>
-      <button class="dest-btn" onclick="bookDestination('Bali')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- SANTORINI -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8">
-    <div class="dest-overlay">
-      <div class="dest-city">Santorini</div>
-      <div class="dest-desc">Romancë dhe det.</div>
-      <div class="dest-price">Nga €900</div>
-      <button class="dest-btn" onclick="bookDestination('Santorini')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- PETRA -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1555992336-03a23c6b1e34">
-    <div class="dest-overlay">
-      <div class="dest-city">Petra</div>
-      <div class="dest-desc">Mrekulli historike.</div>
-      <div class="dest-price">Nga €980</div>
-      <button class="dest-btn" onclick="bookDestination('Petra')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- DUBAI -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
-    <div class="dest-overlay">
-      <div class="dest-city">Dubai</div>
-      <div class="dest-desc">Luks modern.</div>
-      <div class="dest-price">Nga €1100</div>
-      <button class="dest-btn" onclick="bookDestination('Dubai')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- NEW YORK -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2">
-    <div class="dest-overlay">
-      <div class="dest-city">New York</div>
-      <div class="dest-desc">Qyteti që nuk fle.</div>
-      <div class="dest-price">Nga €1300</div>
-      <button class="dest-btn" onclick="bookDestination('New York')">Book Now</button>
-    </div>
-  </div>
-
-  <!-- BARCELONA -->
-  <div class="dest-card">
-    <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded">
-    <div class="dest-overlay">
-      <div class="dest-city">Barcelona</div>
-      <div class="dest-desc">Art & plazh.</div>
-      <div class="dest-price">Nga €850</div>
-      <button class="dest-btn" onclick="bookDestination('Barcelona')">Book Now</button>
-    </div>
-  </div>
-
-</div>
+</body>
+</html>
